@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customized Card Creator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<style>
+  h1 {
+  text-align: center;
+}
+div {
+  margin-bottom: 10px;
+}
+
+img.highlighted {
+  border: 2px solid red;
+}
+</style>
+</head>
+<body>
+  <h1>Customized Card Creator</h1>
+
+  <form>
+    <div  class="container px-5 card ">
+      <div class="row" >
+
+    <div>
+      <label>
+        <input type="radio" name="image" value="gws.jpg"> 
+      </label>
+      <img src="gws.jpg" alt="Image 1"width="200px" height="120px" onclick="highlightImage(this)">
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="image" value="gws2.jpg"> 
+      </label>
+      <img src="gws2.jpg" alt="Image 2" width="200px" height="120px" onclick="highlightImage(this)">
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="image" value="gws3.jpg"> 
+      </label>
+      <img src="gws3.jpg" alt="Image 3"width="200px" height="120px" onclick="highlightImage(this)">
+    </div>
+    </div>
+
+    <div class="row" >
+
+    <div>
+      <label>
+        <input type="radio" name="image" value="gwsf.jpg"> 
+      </label>
+      <img src="gwsf.jpg" alt="Image 4" width="200px" height="120px" onclick="highlightImage(this)">
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="image" value="gwsf2.jpg"> 
+      </label>
+      <img src="gwsf2.jpg" alt="Image 5"width="200px" height="120px" onclick="highlightImage(this)">
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="image" value="gwsf3.jpg"> 
+      </label>
+      <img src="gwsf3.jpg" alt="Image 6" width="200px" height="120px" onclick="highlightImage(this)">
+    </div>
+</div>
+<h1>personal Message</h1>
+
+    <!-- <div> -->
+      <div class="row" >
+
+
+      <input type="text" name="cardText" class="fill" placeholder="Text for Card">
+
+    </div>
+    <button value="Create Card" class="generate" onclick="createCard()"> generator</button>
+
+   
+    </div>
+  </form>
+
+  <script src="task4.js">
+  </script>
+
+</body>
+</html>
